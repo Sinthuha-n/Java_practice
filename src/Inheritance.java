@@ -22,18 +22,28 @@
     }
 }
 
+class VeryAdvCalc extends AdvCalc //multilevel inheritance
+{
+    public double power(int n1,int n2)
+    {
+        return Math.pow(n1,n2);
+    }
+}
+
 public class Inheritance {
     public static void main (String a[])
     {
-        AdvCalc obj = new AdvCalc();
+        VeryAdvCalc obj = new VeryAdvCalc();
         int r1 = obj.add(4,9);
         int r2 =  obj.sub(9,5);
         int r3 =  obj.multi(3,4);
         int r4 =  obj.sub(15,5);
+        double r5 = obj.power(4,4);
 
         System.out.println(r1);
         System.out.println(r2);
         System.out.println(r3);
         System.out.println(r4);
+        System.out.println(r5);
     }
 }
