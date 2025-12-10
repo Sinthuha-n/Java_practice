@@ -47,3 +47,5 @@ public class Inheritance {
         System.out.println(r5);
     }
 }
+/*Java does not support multiple inheritance. it means if we have
+ class c but class c have two parents class A & class B.*/
